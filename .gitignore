@@ -1,0 +1,32 @@
+### IntelliJ IDEA ###
+out/
+!src/main/java/Driver/main/**/out/
+!src/main/java/Driver/test/**/out/
+
+### Eclipse ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+bin/
+!src/main/java/Driver/main/**/bin/
+!src/main/java/Driver/test/**/bin/
+
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+
+### VS Code ###
+.vscode/
+
+### Mac OS ###
+.DS_Store
+
+### Intellij ###
+target/
