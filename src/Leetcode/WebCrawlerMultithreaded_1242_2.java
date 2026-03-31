@@ -1,20 +1,24 @@
+package Leetcode;
+
 import java.util.*;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.locks.Condition;
 import java.util.concurrent.locks.ReentrantReadWriteLock;
 
-/**
- * // This is the HtmlParser's API interface.
- * // You should not implement it, or speculate about its implementation
- * interface HtmlParser {
- *     public List<String> getUrls(String url) {}
- * }
+/*
+  // This is the HtmlParser's API interface.
+  // You should not implement it, or speculate about its implementation
+  interface HtmlParser {
+      public List<String> getUrls(String url) {}
+  }
  */
 
 /**
  * Maintain 2 queues, one for memory operations and one for network operations (getUrls call).
  * Terminating condition: memory task queue and IO task queue are empty
+ *
+ * Doesn't work because we have 2 different locks which use 2 different conditions.
  */
 
 class MemoryWorker implements Runnable {
@@ -96,7 +100,7 @@ class NetworkWorker implements Runnable {
     }
 }
 
-class Solution {
+class Solution_1 {
 
     public final ReentrantReadWriteLock.WriteLock memoryQWriteLock = new ReentrantReadWriteLock().writeLock();
     public final Condition memoryQNotEmpty = memoryQWriteLock.newCondition();

@@ -127,7 +127,7 @@ class PubSubQueue {
 
     // ReentrantLock(fairness) -> if fairness is true, JVM ensures when the lock is released the thread which was waiting
     // longest gets the lock.
-    public final ReentrantReadWriteLock 03 = new ReentrantReadWriteLock(true);
+    public final ReentrantReadWriteLock reentrantReadWriteLock = new ReentrantReadWriteLock(true);
 
     public final ReentrantReadWriteLock.ReadLock queueReadLock = reentrantReadWriteLock.readLock();
 

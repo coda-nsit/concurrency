@@ -1,3 +1,5 @@
+package JavaConcurrencyConcepts;
+
 import java.util.concurrent.Callable;
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.ExecutorService;
@@ -5,7 +7,7 @@ import java.util.concurrent.Executors;
 import java.util.concurrent.atomic.AtomicReference;
 
 
-// runnable1 interrupts a long running callable2
+// runnable1 interrupts a long-running callable2
 // In Java thread1 can't force kill thread2. thread1 can just request thread2 to be interrupted, it is upto thread2
 // to decide what to do when it's interrupted.
 
@@ -16,7 +18,7 @@ public class ThreadInterrupts_8 {
         Runnable runnable1 = () -> {
             try {
                 System.out.println("runnable1 is running");
-                Thread.sleep(1000000000);
+                Thread.sleep(500);
                 System.out.println("Interrupting callable2 from runnable1");
                 thread2Ref.get().interrupt();
             } catch (InterruptedException e) {
