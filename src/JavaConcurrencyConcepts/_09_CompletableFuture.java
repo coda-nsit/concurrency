@@ -7,12 +7,12 @@ import java.util.concurrent.ExecutionException;
 import java.util.concurrent.Executors;
 import java.util.concurrent.ThreadLocalRandom;
 
-///  We are building a airline booking website.
+///  We are building an airline booking website.
 ///  We call 3 external APIs
 ///  1. Class (First, Business, Premium Economy, Economy)
 ///  2. Flight pricing API.
-///  2. Seat availability API.
-///  3. Flight status API.
+///  3. Seat availability API.
+///  4. Flight status API.
 ///  But price API requires the class i.e. 1, 3, 4 are all independent but 2 depends on 1.
 ///  We fire all of these APIs in parallel and wait till all 3 get back.
 
@@ -83,7 +83,7 @@ class FlightInfo {
     }
 }
 
-public class CompletableFuture_9 {
+public class _09_CompletableFuture {
     public static void main(String[] args) throws ExecutionException, InterruptedException {
 
         final var seatClassService = new SeatClassService();

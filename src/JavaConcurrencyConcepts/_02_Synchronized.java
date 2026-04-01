@@ -1,3 +1,5 @@
+package JavaConcurrencyConcepts;
+
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
@@ -65,7 +67,7 @@ class CounterIncrementor implements Runnable {
     }
 }
 
-public class Synchronized_2 {
+public class _02_Synchronized {
     public static void main(String[] args) {
 
         int numThreads = 100;

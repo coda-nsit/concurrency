@@ -29,7 +29,7 @@ class CustomCallable implements Callable<Integer>
     }
 }
 
-public class ExecutorService_1 {
+public class _01_ExecutorService {
     public static void main(String[] args) throws ExecutionException, InterruptedException {
         final int numThreads = 3;
         List<Future<Integer>> futures = new ArrayList<>();

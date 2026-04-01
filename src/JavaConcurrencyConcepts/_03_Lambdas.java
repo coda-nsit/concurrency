@@ -1,3 +1,5 @@
+package JavaConcurrencyConcepts;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -5,7 +7,7 @@ import java.util.List;
 interface MathOperation {
     public double execute(double a, double b);
 }
-public class Lambdas_3 {
+public class _03_Lambdas {
     public static void main(String[] args) {
         List<MathOperation> operations = new ArrayList<>();
         operations.add((a, b) -> a + b);

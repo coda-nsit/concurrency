@@ -151,7 +151,7 @@ class PubSubQueue {
     }
 }
 
-public class ReentrantReadWriteLock_7 {
+public class _07_ReentrantReadWriteLock {
     public static void main(String[] args) throws ExecutionException, InterruptedException {
 
         final int numThreads = Runtime.getRuntime().availableProcessors();

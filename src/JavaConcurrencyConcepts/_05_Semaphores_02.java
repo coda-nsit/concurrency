@@ -1,4 +1,4 @@
-/*
+package JavaConcurrencyConcepts;/*
     We have a server. We want to do active throttling based on the number of users who are connected.
     If number of users exceed 1000, throttle.
 */
@@ -69,7 +69,7 @@ class ServerWorker implements Runnable {
     }
 }
 
-public class Semaphores_5_1 {
+public class _05_Semaphores_02 {
     public static void main(String[] args) {
         final int numThreads = 10;
         try (ExecutorService executorService = Executors.newFixedThreadPool(numThreads)) {
