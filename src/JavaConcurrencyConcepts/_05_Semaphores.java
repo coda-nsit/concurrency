@@ -4,7 +4,7 @@ import java.util.concurrent.Semaphore;
     Semaphores can control how many threads can access a resource concurrently.
     In locks only one thread can access a resource at one time.
 */
-public class Semaphores_5 {
+public class _05_Semaphores {
     public static void main(String[] args) throws InterruptedException {
         Semaphore semaphore = new Semaphore(5);
         System.out.printf("How many more threads can acquire lock? %s\n", semaphore.availablePermits());

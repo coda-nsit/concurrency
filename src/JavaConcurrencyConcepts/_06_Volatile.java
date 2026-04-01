@@ -1,7 +1,7 @@
 import java.util.concurrent.Executors;
 
 
-public class Volatile_6 {
+public class _06_Volatile {
 
     // We need loopBreaker to be visible to both looper and loopBreakerSetter thread
     // 1. volatile variables can't be put inside functions.

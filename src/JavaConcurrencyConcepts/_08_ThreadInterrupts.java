@@ -11,7 +11,7 @@ import java.util.concurrent.atomic.AtomicReference;
 // In Java thread1 can't force kill thread2. thread1 can just request thread2 to be interrupted, it is upto thread2
 // to decide what to do when it's interrupted.
 
-public class ThreadInterrupts_8 {
+public class _08_ThreadInterrupts {
     public static void main(String[] args) throws ExecutionException, InterruptedException {
         final AtomicReference<Thread> thread2Ref = new AtomicReference<>();
 
